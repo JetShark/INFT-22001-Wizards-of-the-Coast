@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
 // Components
 import { NavLink } from "./NavbarElements";
 import Sidebar from "../Nav/Sidebar";
@@ -13,10 +8,10 @@ import Backdrop from "../Elements/Backdrop";
 // Assets
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
-import Landing from "../../screens/Landing";
-import AboutPage from "../../screens/About";
-import ContactPage from "../../screens/Contact";
-import ProductsPage from "../../screens/Products";
+// import Landing from "../../screens/Landing";
+// import AboutPage from "../../screens/About";
+// import ContactPage from "../../screens/Contact";
+// import ProductsPage from "../../screens/Products";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
@@ -46,12 +41,16 @@ export default function TopNavbar() {
             <BurgerIcon />
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
+            Home, About, Contact
+            {/* <NavLink to="/" activeStyle>
+                Home
+            </NavLink>
             <NavLink to="/about" activeStyle>
                 About
             </NavLink>
             <NavLink to="/contact" activeStyle>
                 Contact Us
-            </NavLink>
+            </NavLink> */}
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
             <li className="semiBold font15 pointer">
@@ -67,17 +66,6 @@ export default function TopNavbar() {
           </UlWrapperRight>
         </NavInner>
       </Wrapper>
-      <Router>
-              <Routes>
-                  <Route exact path="/" element={<Landing />} />
-                  <Route path="/about" element={<AboutPage />} />
-                  <Route
-                      path="/contact"
-                      element={<ContactPage />}
-                  />
-                  <Route path="/products" element={<ProductsPage />} />
-            </Routes>
-        </Router>
     </>
   );
 }
