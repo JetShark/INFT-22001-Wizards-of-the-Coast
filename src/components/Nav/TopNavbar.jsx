@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 // Components
-import { NavLink } from "./NavbarElements";
+//import { NavLink } from "./NavbarElements";
+import { Link as NavLink } from "react-router-dom";
 import Sidebar from "../Nav/Sidebar";
 import Backdrop from "../Elements/Backdrop";
 // Assets
@@ -41,7 +42,10 @@ export default function TopNavbar() {
             <BurgerIcon />
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
-            Home, About, Contact
+            <a href="/">Home</a> |
+            <a href="/products">Products</a> |
+            <a href="/about">About</a> |
+            <a href="/contact">Contact</a>  
             {/* <NavLink to="/" activeStyle>
                 Home
             </NavLink>
