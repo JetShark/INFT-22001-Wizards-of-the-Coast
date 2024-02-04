@@ -14,13 +14,13 @@ import AddImage2 from "../../assets/img/add/add2.png";
 
 export default function Projects() {
   return (
-    <Wrapper id="projects">
+    <Wrapper id="about">
       <div className="whiteBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Projects</h1>
+            <h1 className="font40 extraBold">MAGIC THE GATHERING</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Put the fun in fission! Preorder the latest set today!  Track the Clues. Crack the Case.  Time to dig into adventure!
               <br />
               labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>

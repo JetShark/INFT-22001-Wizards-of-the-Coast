@@ -3,10 +3,11 @@ import styled from "styled-components";
 // Assets
 import RollerIcon from "../../assets/svg/Services/RollerIcon";
 import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
-import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
+import DrWhoIcon from "../../assets/svg/Services/DrWhoIcon";
 import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
+import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
 
-export default function ServiceBox({icon, title, subtitle}) {
+export default function ProductsBox({icon, title, subtitle}) {
   let getIcon;
 
   switch (icon) {
@@ -15,6 +16,9 @@ export default function ServiceBox({icon, title, subtitle}) {
       break;
     case "monitor":
       getIcon = <MonitorIcon />;
+      break;
+    case "drwho":
+      getIcon = <DrWhoIcon />;
       break;
     case "browser":
       getIcon = <BrowserIcon />;
