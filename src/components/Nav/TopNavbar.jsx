@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 // Components
+import { NavLink } from "./NavbarElements";
 import Sidebar from "../Nav/Sidebar";
 import Backdrop from "../Elements/Backdrop";
 // Assets
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
+import Landing from "../../screens/Landing";
+import AboutPage from "../../screens/About";
+import ContactPage from "../../screens/Contact";
+import ProductsPage from "../../screens/Products";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
@@ -36,36 +46,12 @@ export default function TopNavbar() {
             <BurgerIcon />
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
-            <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="home" spy={true} smooth={true} offset={-80}>
-                Home
-              </Link>
-            </li>
-            <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="services" spy={true} smooth={true} offset={-80}>
-                Services
-              </Link>
-            </li>
-            <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="projects" spy={true} smooth={true} offset={-80}>
-                Projects
-              </Link>
-            </li>
-            <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="blog" spy={true} smooth={true} offset={-80}>
-                Blog
-              </Link>
-            </li>
-            <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="pricing" spy={true} smooth={true} offset={-80}>
-                Pricing
-              </Link>
-            </li>
-            <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: "10px 15px" }} to="contact" spy={true} smooth={true} offset={-80}>
-                Contact
-              </Link>
-            </li>
+            <NavLink to="/about" activeStyle>
+                About
+            </NavLink>
+            <NavLink to="/contact" activeStyle>
+                Contact Us
+            </NavLink>
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
             <li className="semiBold font15 pointer">
@@ -81,6 +67,17 @@ export default function TopNavbar() {
           </UlWrapperRight>
         </NavInner>
       </Wrapper>
+      <Router>
+              <Routes>
+                  <Route exact path="/" element={<Landing />} />
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route
+                      path="/contact"
+                      element={<ContactPage />}
+                  />
+                  <Route path="/products" element={<ProductsPage />} />
+            </Routes>
+        </Router>
     </>
   );
 }
