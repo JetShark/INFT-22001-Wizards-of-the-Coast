@@ -8,13 +8,13 @@ import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
 import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
 
 // Additional icons
-import cmIcon from "../../assets/icons/cm.png";
-import eldraineIcon from "../../assets/icons/eldraine.png";
-import ixalanIcon from "../../assets/icons/ixalan.png";
-import manorIcon from "../../assets/icons/manor.png";
-import mmaIcon from "../../assets/icons/mma.png";
-import phyrIcon from "../../assets/icons/phyr.png";
-import ravnicIcon from "../../assets/icons/ravnic.png";
+import cmIcon from "../../assets/Services/cm.png";
+import eldraineIcon from "../../assets/Services/eldraine.png";
+import ixalanIcon from "../../assets/Services/ixalan.png";
+import manorIcon from "../../assets/Services/manor.png";
+import mmaIcon from "../../assets/Services/mma.png";
+import phyrIcon from "../../assets/Services/phyr.png";
+import ravnicIcon from "../../assets/Services/ravnic.png";
 
 export default function ProductsBox({ icon, title, subtitle }) {
   let getIcon;
