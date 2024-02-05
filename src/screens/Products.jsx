@@ -2,7 +2,7 @@ import React from "react";
 // Sections
 // import TopNavbar from "../components/Nav/TopNavbar";
 // import Header from "../components/Sections/Header";
-import Services from "../components/Sections/Services";
+import Products from "../components/Sections/Products";
 import Projects from "../components/Sections/Projects";
 // import Blog from "../components/Sections/Blog";
 import Pricing from "../components/Sections/Pricing";
@@ -13,7 +13,7 @@ export default function ProductsPage() {
   return (
     <>
       {/* <TopNavbar /> */}
-      <Services />
+      <Products />
       <Projects />
       <Pricing />
       <Footer />
