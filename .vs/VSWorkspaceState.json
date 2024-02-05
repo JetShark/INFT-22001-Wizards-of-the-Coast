@@ -4,14 +4,12 @@
     "\\src",
     "\\src\\assets",
     "\\src\\assets\\svg",
+    "\\src\\assets\\svg\\Services",
     "\\src\\components",
     "\\src\\components\\Elements",
     "\\src\\components\\Sections",
-    "\\src\\screens",
-    "\\Unsorted Logos and Art",
-    "\\Unsorted Logos and Art\\Past",
-    "\\Unsorted Logos and Art\\Past\\who_key_art_sma_en"
+    "\\website"
   ],
-  "SelectedNode": "\\src\\components\\Sections\\Contact.jsx",
+  "SelectedNode": "\\src\\assets\\svg\\Services\\DrWhoIcon.jsx",
   "PreviewInSolutionExplorer": false
 }
