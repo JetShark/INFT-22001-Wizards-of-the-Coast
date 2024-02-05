@@ -3,6 +3,7 @@ import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 import FullButton from "../Buttons/FullButton";
+import { useNavigate } from "react-router-dom";  // new import
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
 import ProjectImg2 from "../../assets/img/projects/2.png";
@@ -11,8 +12,17 @@ import ProjectImg4 from "../../assets/img/projects/4.png";
 import ProjectImg5 from "../../assets/img/projects/5.png";
 import ProjectImg6 from "../../assets/img/projects/6.png";
 import AddImage2 from "../../assets/img/add/add2.png";
+import { Link } from 'react-scroll';
+import Contact from "../Sections/Contact"
 
 export default function Projects() {
+  const navigate = useNavigate();  // Updated hook
+
+  const handleButtonClick = () => {
+    // Navigate to the "/contact" page
+    navigate("/contact");
+  };
+
   return (
     <Wrapper id="about">
       <div className="whiteBg">
@@ -102,13 +112,17 @@ export default function Projects() {
                 diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
               </p>
               <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
-                <div style={{ width: "190px" }}>
-                  <FullButton title="Get Started" action={() => alert("clicked")} />
-                </div>
-                <div style={{ width: "190px", marginLeft: "15px" }}>
-                  <FullButton title="Contact Us" action={() => alert("clicked")} border />
-                </div>
-              </ButtonsRow>
+        <div style={{ width: "190px" }}>
+          <FullButton title="Get Started" action={() => alert("clicked")} />
+        </div>
+        <Link className="pointer flexNullCenter" to="contact" smooth={true}>
+          <div style={{ width: "190px", marginLeft: "15px" }}>
+            <a href="/contact">
+              <FullButton title="Contact Us" action={handleButtonClick} border />
+            </a>
+          </div>
+        </Link>
+      </ButtonsRow>
             </AddRight>
           </Advertising>
         </div>
