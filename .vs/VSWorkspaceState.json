@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\src",
+    "\\src\\assets",
+    "\\src\\assets\\svg",
+    "\\src\\assets\\svg\\Services",
+    "\\src\\components",
+    "\\src\\components\\Elements",
+    "\\src\\components\\Sections",
     "\\website"
   ],
-  "SelectedNode": "\\website\\product.html",
+  "SelectedNode": "\\src\\assets\\svg\\Services\\DrWhoIcon.jsx",
   "PreviewInSolutionExplorer": false
 }
