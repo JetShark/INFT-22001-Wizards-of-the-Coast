@@ -8,13 +8,13 @@ import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
 import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
 
 // Additional icons
-import cmIcon from "../../assets/Services/cm.png";
-import eldraineIcon from "../../assets/Services/eldraine.png";
-import ixalanIcon from "../../assets/Services/ixalan.png";
-import manorIcon from "../../assets/Services/manor.png";
-import mmaIcon from "../../assets/Services/mma.png";
-import phyrIcon from "../../assets/Services/phyr.png";
-import ravnicIcon from "../../assets/Services/ravnic.png";
+import CmIcon from "../../assets/svg/Services/CmIcon";
+import EldraineIcon from "../../assets/svg/Services/EldraineIcon";
+import IxalanIcon from "../../assets/svg/Services/IxalanIcon";
+import ManorIcon from "../../assets/svg/Services/ManorIcon";
+import MmaIcon from "../../assets/svg/Services/MmaIcon";
+import PhyrIcon from "../../assets/svg/Services/PhyrIcon";
+import RavnicIcon from "../../assets/svg/Services/RavnicIcon";
 
 export default function ProductsBox({ icon, title, subtitle }) {
   let getIcon;
@@ -29,32 +29,29 @@ export default function ProductsBox({ icon, title, subtitle }) {
     case "drwho":
       getIcon = <DrWhoIcon />;
       break;
-    case "browser":
-      getIcon = <BrowserIcon />;
-      break;
     case "printer":
       getIcon = <PrinterIcon />;
       break;
     case "cm":
-      getIcon = <img src={cmIcon} alt="CM Icon" />;
+      getIcon = <CmIcon />;
       break;
     case "eldraine":
-      getIcon = <img src={eldraineIcon} alt="Eldraine Icon" />;
+      getIcon = <EldraineIcon />;
       break;
     case "ixalan":
-      getIcon = <img src={ixalanIcon} alt="Ixalan Icon" />;
+      getIcon = <IxalanIcon />;
       break;
     case "manor":
-      getIcon = <img src={manorIcon} alt="Manor Icon" />;
+      getIcon = <ManorIcon />;
       break;
     case "mma":
-      getIcon = <img src={mmaIcon} alt="MMA Icon" />;
+      getIcon = <MmaIcon />;
       break;
     case "phyr":
-      getIcon = <img src={phyrIcon} alt="Phyr Icon" />;
+      getIcon = <PhyrIcon />;
       break;
     case "ravnic":
-      getIcon = <img src={ravnicIcon} alt="Ravnic Icon" />;
+      getIcon = <RavnicIcon />;
       break;
     default:
       getIcon = <RollerIcon />;
