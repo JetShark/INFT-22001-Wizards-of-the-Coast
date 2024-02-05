@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #0074d9, #9933cc);
+  cursor: default;
+}
+
+.container {
+  text-align: center;
+}
+
+.welcome-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.rounded-button {
+  background-color: #0074d9;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, cursor 0.2s;
+}
+
+.rounded-button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
