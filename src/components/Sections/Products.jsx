@@ -3,13 +3,14 @@ import styled from "styled-components";
 // Components
 import ClientSlider from "../Elements/ClientSlider";
 import ProductsBox from "../Elements/ProductsBox";
-import FullButton from "../Buttons/FullButton";
+// import FullButton from "../Buttons/FullButton";
 
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+
+// import AddImage1 from "../../assets/img/add/1.png";
+// import AddImage2 from "../../assets/img/add/2.png";
+// import AddImage3 from "../../assets/img/add/3.png";
+// import AddImage4 from "../../assets/img/add/4.png";
 
 export default function Products() {
   return (
@@ -30,25 +31,25 @@ export default function Products() {
               <ProductsBox
                 icon="manor" // icons ( needs to be changed)
                 title="MURDERS AT KARLOV MANOR"
-                subtitle="There’s been a string of high-profile murders on Ravnica involving some of its most powerful citizens. It's up to you to crack the case!"
+                subtitle="There's been a string of high-profile murders on Ravnica involving some of its most powerful citizens. It's up to you to crack the case!"
               />
             </ProductsBoxWrapper>
             <ProductsBoxWrapper>
               <ProductsBox
                 icon="ixalan"
                 title="THE LOST CAVERNS OF IXALAN"
-                subtitle="Dig into Magic’s Mesoamerican inspired set with untold treasures beyond anything you’ve ever seen before. With massive dinosaurs, mysterious secrets, and adventure around every corner it's an adventure worth braving!"
+                subtitle="Dig into Magic's Mesoamerican inspired set with untold treasures beyond anything you've ever seen before. With massive dinosaurs, mysterious secrets, and adventure around every corner it's an adventure worth braving!"
               />
             </ProductsBoxWrapper>
             <ProductsBoxWrapper>
               <ProductsBox
                 icon="eldraine"
                 title="WILDS OF ELDRAINE"
-                subtitle="Get lost in the Wilds of Eldraine like an enchanting storybook. Discover fantastical creatures, unbelievable settings, and beloved characters with a unique twist. Craft your own fairy tale with Magic’s immersive gameplay, art, and storytelling."
+                subtitle="Get lost in the Wilds of Eldraine like an enchanting storybook. Discover fantastical creatures, unbelievable settings, and beloved characters with a unique twist. Craft your own fairy tale with Magic's immersive gameplay, art, and storytelling."
               />
             </ProductsBoxWrapper>
             <ProductsBoxWrapper>
-              <ProductsBox icon="cm" title="Commander Masters" subtitle="Commander Masters is the first Masters set made for Magic’s most popular format. Upgrade your favorite decks or build something new with all the power and collectability players expect from the Masters name." />
+              <ProductsBox icon="cm" title="Commander Masters" subtitle="Commander Masters is the first Masters set made for Magic's most popular format. Upgrade your favorite decks or build something new with all the power and collectability players expect from the Masters name." />
             </ProductsBoxWrapper>
           </ProductsBoxRow>
           </div>
@@ -83,7 +84,7 @@ export default function Products() {
               />
             </ProductsBoxWrapper>
             <ProductsBoxWrapper>
-              <ProductsBox icon="phyr" title="PHYREXIA: ALL WILL BE ONE" subtitle="Each Set Booster contains 12 Magic cards, 1 Art Card, and 1 token/ad card or card from “The List” (a list of special cards from Magic’s history and mechanically identical versions of cards originally printed in Secret Lair x Street Fighter featuring Magic-themed art—1 in 25% of packs)." />
+              <ProductsBox icon="phyr" title="PHYREXIA: ALL WILL BE ONE" subtitle="Each Set Booster contains 12 Magic cards, 1 Art Card, and 1 token/ad card or card from 'The List' (a list of special cards from Magic's history and mechanically identical versions of cards originally printed in Secret Lair x Street Fighter featuring Magic-themed art (1 in 25% of packs)." />
             </ProductsBoxWrapper>
           </ProductsBoxRow>
         </div>
@@ -116,102 +117,102 @@ const HeaderInfo = styled.div`
     text-align: center;
   }
 `;
-const Advertising = styled.div`
-  margin: 80px 0;
-  padding: 100px 0;
-  position: relative;
-  @media (max-width: 1160px) {
-    padding: 100px 0 40px 0;
-  }
-  @media (max-width: 860px) {
-    flex-direction: column;
-    padding: 0 0 30px 0;
-    margin: 80px 0 0px 0;
-  }
-`;
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
-  }
-`;
-const AddLeft = styled.div`
-  width: 50%;
-  p {
-    max-width: 475px;
-  }
-  @media (max-width: 860px) {
-    width: 80%;
-    order: 2;
-    text-align: center;
-    h2 {
-      line-height: 3rem;
-      margin: 15px 0;
-    }
-    p {
-      margin: 0 auto;
-    }
-  }
-`;
-const AddRight = styled.div`
-  width: 50%;
-  position: absolute;
-  top: -70px;
-  right: 0;
-  @media (max-width: 860px) {
-    width: 80%;
-    position: relative;
-    order: 1;
-    top: -40px;
-  }
-`;
-const AddRightInner = styled.div`
-  width: 100%;
-`;
-const AddImgWrapp1 = styled.div`
-  width: 48%;
-  margin: 0 6% 10px 6%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
-const AddImgWrapp2 = styled.div`
-  width: 30%;
-  margin: 0 5% 10px 5%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
-const AddImgWrapp3 = styled.div`
-  width: 20%;
-  margin-left: 40%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
-const AddImgWrapp4 = styled.div`
-  width: 30%;
-  margin: 0 5%auto;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
+// const Advertising = styled.div`
+//   margin: 80px 0;
+//   padding: 100px 0;
+//   position: relative;
+//   @media (max-width: 1160px) {
+//     padding: 100px 0 40px 0;
+//   }
+//   @media (max-width: 860px) {
+//     flex-direction: column;
+//     padding: 0 0 30px 0;
+//     margin: 80px 0 0px 0;
+//   }
+// `;
+// const ButtonsRow = styled.div`
+//   @media (max-width: 860px) {
+//     justify-content: space-between;
+//   }
+// `;
+// const AddLeft = styled.div`
+//   width: 50%;
+//   p {
+//     max-width: 475px;
+//   }
+//   @media (max-width: 860px) {
+//     width: 80%;
+//     order: 2;
+//     text-align: center;
+//     h2 {
+//       line-height: 3rem;
+//       margin: 15px 0;
+//     }
+//     p {
+//       margin: 0 auto;
+//     }
+//   }
+// `;
+// const AddRight = styled.div`
+//   width: 50%;
+//   position: absolute;
+//   top: -70px;
+//   right: 0;
+//   @media (max-width: 860px) {
+//     width: 80%;
+//     position: relative;
+//     order: 1;
+//     top: -40px;
+//   }
+// `;
+// const AddRightInner = styled.div`
+//   width: 100%;
+// `;
+// const AddImgWrapp1 = styled.div`
+//   width: 48%;
+//   margin: 0 6% 10px 6%;
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 1rem;
+//     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//   }
+// `;
+// const AddImgWrapp2 = styled.div`
+//   width: 30%;
+//   margin: 0 5% 10px 5%;
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 1rem;
+//     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//   }
+// `;
+// const AddImgWrapp3 = styled.div`
+//   width: 20%;
+//   margin-left: 40%;
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 1rem;
+//     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//   }
+// `;
+// const AddImgWrapp4 = styled.div`
+//   width: 30%;
+//   margin: 0 5%auto;
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 1rem;
+//     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//   }
+// `;

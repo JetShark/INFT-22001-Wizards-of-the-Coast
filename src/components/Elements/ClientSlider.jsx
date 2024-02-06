@@ -2,12 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
 // Assets
-import ClientLogo01 from "../../assets/img/clients/logo01.svg"
-import ClientLogo02 from "../../assets/img/clients/logo02.svg";
-import ClientLogo03 from "../../assets/img/clients/logo03.svg";
-import ClientLogo04 from "../../assets/img/clients/logo04.svg";
-import ClientLogo05 from "../../assets/img/clients/logo05.svg";
-import ClientLogo06 from "../../assets/img/clients/logo06.svg";
+import ClientLogo01 from "../../assets/img/clients/1-clb_expsym_m_web.png"
+import ClientLogo02 from "../../assets/img/clients/2-ltr_expsym_u_web.png";
+import ClientLogo03 from "../../assets/img/clients/3-w4k_expsym_m_web.png";
+import ClientLogo04 from "../../assets/img/clients/4-rex_expsym_m_web_3in.png";
+import ClientLogo05 from "../../assets/img/clients/5-who_expsym_u_web_3in.png";
+import ClientLogo06 from "../../assets/img/clients/6-pip_expsym_m_web.png";
 
 export default function ClientSlider() {
   const settings = {
@@ -80,7 +80,7 @@ export default function ClientSlider() {
 
 const LogoWrapper = styled.div`
   width: 100%;
-  height: 100px;
+  height: 150px;
   cursor: pointer;
   :focus-visible {
     outline: none;
@@ -88,7 +88,12 @@ const LogoWrapper = styled.div`
   }
 `;
 const ImgStyle = styled.img`
-  width: 100%;
-  height: 100%;
+  
+  -ms-transform: translateY(+45%);
+  transform: translateY(+45%);
+
+  width: 80%;
+  height: 80%;
   padding: 10%;
+  
 `;
