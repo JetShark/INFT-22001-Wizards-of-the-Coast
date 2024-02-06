@@ -7,7 +7,16 @@ import DrWhoIcon from "../../assets/svg/Services/DrWhoIcon";
 import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
 import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
 
-export default function ProductsBox({icon, title, subtitle}) {
+// Additional icons
+import CmIcon from "../../assets/svg/Services/CmIcon";
+import EldraineIcon from "../../assets/svg/Services/EldraineIcon";
+import IxalanIcon from "../../assets/svg/Services/IxalanIcon";
+import ManorIcon from "../../assets/svg/Services/ManorIcon";
+import MmaIcon from "../../assets/svg/Services/MmaIcon";
+import PhyrIcon from "../../assets/svg/Services/PhyrIcon";
+import RavnicIcon from "../../assets/svg/Services/RavnicIcon";
+
+export default function ProductsBox({ icon, title, subtitle }) {
   let getIcon;
 
   switch (icon) {
@@ -20,17 +29,34 @@ export default function ProductsBox({icon, title, subtitle}) {
     case "drwho":
       getIcon = <DrWhoIcon />;
       break;
-    case "browser":
-      getIcon = <BrowserIcon />;
-      break;
     case "printer":
       getIcon = <PrinterIcon />;
+      break;
+    case "cm":
+      getIcon = <CmIcon />;
+      break;
+    case "eldraine":
+      getIcon = <EldraineIcon />;
+      break;
+    case "ixalan":
+      getIcon = <IxalanIcon />;
+      break;
+    case "manor":
+      getIcon = <ManorIcon />;
+      break;
+    case "mma":
+      getIcon = <MmaIcon />;
+      break;
+    case "phyr":
+      getIcon = <PhyrIcon />;
+      break;
+    case "ravnic":
+      getIcon = <RavnicIcon />;
       break;
     default:
       getIcon = <RollerIcon />;
       break;
   }
-
 
   return (
     <Wrapper className="flex flexColumn">
